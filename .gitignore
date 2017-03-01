@@ -8,7 +8,11 @@
 sysinfo.txt
 *.stackdump
 
+# =============== #
+# Custom Files    #
+# =============== # 
 UnityLockfile
+main.exe
 
 # ============================================= #
 # Visual Studio / MonoDevelop / Rider generated #
