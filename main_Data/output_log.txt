@@ -1,0 +1,32 @@
+Initialize engine version: 5.5.1f1 (88d00a7498cd)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: Intel(R) HD Graphics 4600 (ID=0x412)
+    Vendor:   Intel
+    VRAM:     1008 MB
+    Driver:   6.1.7600.16385
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\winikkc\Documents\Unity Projects\Fragment of Gravity Project\main_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\winikkc\Documents\Unity Projects\Fragment of Gravity Project\main_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\winikkc\Documents\Unity Projects\Fragment of Gravity Project\main_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\winikkc\Documents\Unity Projects\Fragment of Gravity Project\main_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\winikkc\Documents\Unity Projects\Fragment of Gravity Project\main_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\winikkc\Documents\Unity Projects\Fragment of Gravity Project\main_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\winikkc\Documents\Unity Projects\Fragment of Gravity Project\main_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\winikkc\Documents\Unity Projects\Fragment of Gravity Project\main_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\winikkc\Documents\Unity Projects\Fragment of Gravity Project\main_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\winikkc\Documents\Unity Projects\Fragment of Gravity Project\main_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\winikkc\Documents\Unity Projects\Fragment of Gravity Project\main_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading C:\Users\winikkc\Documents\Unity Projects\Fragment of Gravity Project\main_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+- Completed reload, in  0.028 seconds
+Platform assembly: C:\Users\winikkc\Documents\Unity Projects\Fragment of Gravity Project\main_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\winikkc\Documents\Unity Projects\Fragment of Gravity Project\main_Data\Managed\System.dll (this message is harmless)
+desktop: 1600x900 60Hz; virtual: 3520x1080 at 0,0
+<RI> Initializing input.
+XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 1.635325 ms
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 34b4 -> priority: 1 
