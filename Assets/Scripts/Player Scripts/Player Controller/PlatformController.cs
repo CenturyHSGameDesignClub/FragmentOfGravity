@@ -1,32 +1,29 @@
 ﻿using UnityEngine;
 using System.Collections;
-/*
+
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlatformController : MonoBehaviour 
 {
 	[Header("Movement Settings:")]
 	[SerializeField]
-	private float movementSpeed = 5;
+	private float movementSpeed = 5;					//speed of movement
 	[Space]
 	[Header("Jump Settings:")]
 	[SerializeField]
-	private Transform groundChecker;
+	private Transform groundChecker;					//transform for circlur casting
 	[SerializeField]
-	private float jumpPower = 10.0f;
+	private float jumpPower = 10.0f;					//power of jump
 	[SerializeField]
-	private float distanceToGround = 0.5f;
+	private float distanceToGround = 0.5f;				//distance that counts as the ground
 	[SerializeField]
-	private float downAccel = 1f;
-	[SerializeField]
-	private LayerMask ground;
+	private LayerMask ground;							//physics layers that count as ground
 
-	private Rigidbody2D rb;
+	private Rigidbody2D rb;			
 	private RaycastHit2D hit;
 	private Vector2 velocity = Vector2.zero;
 	private Vector2 direction = Vector2.zero;
 	private float jumpDirection = 1;
 	private float xInput = 0;
-	private float downwardMovement = 0;
 	private bool jumpPressed = false;
 	
 	void Start () 
@@ -37,22 +34,32 @@ public class PlatformController : MonoBehaviour
 
 	void Update () 
 	{
-		xInput = Input.GetAxisRaw ("Horizontal");
-		jumpPressed = Input.GetButtonDown ("Jump");
-
+		//get input from player
+		GetInput ();
+		//apply logic calculations
 		JumpLogic ();
+		//rotates player's object based on the direction of gravity
 		GravityRotate ();
 
+		//clamps the velocity
 		velocity = Vector2.ClampMagnitude (velocity, 1).normalized * movementSpeed;
 	}
 
 	void FixedUpdate()
 	{
-		if (velocity != Vector2.zero) {
-			rb.velocity = velocity * Time.fixedDeltaTime;
+		if (GravityMagic.Reverse) {
+			rb.velocity = new Vector2 (rb.velocity.y, velocity.x);
+		} else {
+			rb.velocity = new Vector2 (velocity.x, rb.velocity.y);
 		}
 	}
-	
+
+	void GetInput()
+	{
+		xInput = Input.GetAxisRaw ("Horizontal");
+		jumpPressed = Input.GetButtonDown ("Jump");
+	}
+
 	void GravityRotate()
 	{
 		if (GravityMagic.State == GravityMagic.GravityState.UP) {
@@ -80,7 +87,7 @@ public class PlatformController : MonoBehaviour
 			rb.rotation = 90;
 		}
 	}
-	
+
 	void JumpLogic()
 	{
 		if (Grounded () && jumpPressed) {
@@ -96,12 +103,9 @@ public class PlatformController : MonoBehaviour
 	bool Grounded()
 	{
 		hit = Physics2D.Raycast (rb.position, direction, distanceToGround, ground);
-		Debug.Log (hit.distance);
 		if(hit.collider != null) {
 			return true;
 		}
-		Debug.Log ("Not grounded");
 		return false;
 	}
 }
-*/

@@ -3,10 +3,7 @@ using System.Collections;
 
 public class CameraFollow : MonoBehaviour 
 {
-	public float smoothSpeed = 1;
-
 	private Transform target;
-	private Vector2 followVelocity;
 
 	void Start () 
 	{
